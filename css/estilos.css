@@ -13,7 +13,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #20bcf0;
+    background-color: #DED3A6;
 }
 
 
@@ -33,6 +33,7 @@ header{
 .search input{
     width: 300px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 /*barramenu*/
@@ -40,7 +41,7 @@ header{
 .container__menu{
     width: 100%;
     height: 70px;
-    background: #023877;
+    background: #257f40;
     padding: 0px 20px;
 }
 
@@ -73,13 +74,13 @@ nav > ul > li > a{
     color: white;
     padding: 14px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     transition: all 300ms ease;
 }
 
 nav > ul > li > a:hover{
     transform: scale(1.1);
-    background-color: #0074c7;
+    background-color: #759242;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -121,160 +122,119 @@ nav ul li:hover ul{
 
 nav ul li ul li a{
     display: block;
-    color: #0099E9;
+    color: #047216;
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     transition: all 300ms ease;
 }
 
 
-nav ul li ul li a:hover{
-    background: #0074c7;
-    color: #fff;
-    transform: scale(1.1);
-    padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+.navbar ul li ul li ul{
+    top: 0;
+    left: 200px;
+    position: absolute;
+    display: none;
 }
-
-header .logo{
-    font-weight: bold;
-    font-size: 25px;
-    color: #ffffff;
-}
-
-
-
-/*
-
-header{
-  
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 0 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-
-}
-
-header .logo{
-    font-weight: bold;
-    font-size: 25px;
-    color: #ffffff;
-}
-
-header .navbar ul {
-    list-style: none;
-}
-
-header .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-header .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #ffffff;
+.navbar ul li:hover > ul{
     display: block;
 }
 
-header .navbar ul li a:hover {
-    background-color: #adcd10;
-}
 
-header .navbar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background-color: #20bcf0;
-    display: none;
-}
-header .navbar ul li ul li {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+nav ul li ul li a:hover{
+    background: #22c177;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 
-*/
+/*responsi*/
 
-header .navbar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-
-    display: none;
-}
-.navbar ul li ul li ul {
-    left: 200px;
-    top: 0;
-}
-.navbar ul li:focus-within > ul ,
-.navbar ul li:hover > ul {
-    display: initial;
-}
-
-
-.drop {
-    margin-left: 10px;
-    width: 15px;
-}
-
-#menu {
-    display: none;
-}
-
-.menu-icono{
-    width: 25px;
-}
-
-header label {
+i.icon__menu img{
+    width: 26px;
+    height: 100%;
     cursor: pointer;
+    align-items: center;
     display: none;
 }
 
-@media(max-width:991px) {
-    header {
-        padding: 20px;
-    }
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
 
-    header label {
-        display: initial;
-    }
 
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #20bcf0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+#check__menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 720px){
+    .search input{
         display: none;
     }
 
-    header .navbar ul li {
-        width: 100%;
+    .header_superior{
+        padding: 10px;
     }
 
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
+    .logo img{
+        width: 100px;
     }
 
-    header .navbar ul li ul li {
-        background-color: #1ba0cd;
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left: 0;
-    }
-
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
+nav > ul{
+    flex-direction: column;
+    background-color: #023877;
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 300px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
 }
+
+nav > ul > li > a:hover{
+    transform: scale(1);
+}
+
+nav ul li ul{
+    left: 90px;
+}
+
+nav > ul > li:hover ul{
+    top: 45px;
+}
+ 
+
+/*
+nav > ul > li:first-child a{
+background-position: 20px;
+}
+
+#selected{
+    transform: scale(1);
+}
+*/
+
+
+
+#label__check{
+    display: block;
+}
+
+}
+
+
+
+
+
