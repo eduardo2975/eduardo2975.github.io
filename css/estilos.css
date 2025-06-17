@@ -26,8 +26,18 @@ header{
     padding: 20px;
 }
 
+
+
 .logo img{
         width: 150px;
+}
+
+.texto_logo{
+    color: #02300a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+padding-top: 50px;
+text-align: center;
 }
 
 .search input{
@@ -36,6 +46,25 @@ header{
     border-radius: 5px;
 }
 
+/*articulo*/
+main{
+background: #f0f0f0;
+padding: 40px 20px;
+margin-top: 194px;
+}
+
+article{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
 /*barramenu*/
 
 .container__menu{
@@ -145,12 +174,26 @@ nav ul li ul li a{
 
 
 nav ul li ul li a:hover{
-    background: #22c177;
+    background: #759242;
     color: #fff;
     transform: scale(1.1);
     padding-left: 30px;
     font-size: 13px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*footer*/
+
+footer{
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.footer-creds{
+  text-align: center;
+    font-size: 12px;
+    
 }
 
 
@@ -163,6 +206,8 @@ i.icon__menu img{
     align-items: center;
     display: none;
 }
+
+
 
 #label__check{
     width: 26px;
@@ -191,12 +236,12 @@ i.icon__menu img{
 
 nav > ul{
     flex-direction: column;
-    background-color: #023877;
+    background-color: #257f40;
     position: fixed;
     left: 0;
     top: 158px;
     width: 100%;
-    height: 300px;
+    height: 0px;
     transition: all 300ms ease;
     z-index: 100;
     opacity: 0;
@@ -207,16 +252,18 @@ nav > ul > li > a:hover{
     transform: scale(1);
 }
 
+/*posisicion sub menu*/
+
 nav ul li ul{
     left: 90px;
 }
 
 nav > ul > li:hover ul{
-    top: 45px;
+    top: 44px;
 }
  
 
-/*
+
 nav > ul > li:first-child a{
 background-position: 20px;
 }
@@ -224,14 +271,27 @@ background-position: 20px;
 #selected{
     transform: scale(1);
 }
-*/
+
 
 
 
 #label__check{
     display: block;
+
 }
 
+
+i.icon__menu img{
+    display: flex;
+ 
+}
+
+#check__menu:checked ~ nav > ul{
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
+}
+ 
 }
 
 
