@@ -80,11 +80,14 @@ article p {
   list-style: none;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+
 }
 
 .menu_inf li {
-  background-color: #f0f0ff;
+  background-color: #f0f0f0;
   margin: 1px;
   text-align: center;
 
@@ -94,7 +97,7 @@ article p {
 
 .menu_inf > li > a {
   width: 100%;
-  height: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
   color: #404040;
@@ -105,16 +108,23 @@ article p {
 }
 
 .menu_inf > li > a:hover {
-  transform: scale(1.1);
   background-color: #759242;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   color: #f0f0f0;
+}
+
+.menu_inf > li > img{
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 /*enlaces*/
 
 
-
+.apoyo{
+  font-size: 10px;
+  padding-bottom: 15px;
+}
 
 .link-logos {
   max-width: 1200px;
@@ -127,21 +137,13 @@ article p {
   list-style: none;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: #f0f0ff;
-
- 
+  grid-template-columns: repeat(7, 1fr); 
 }
 
-.enlaces > li > a {
-  width: 100%;
-  height: 100%;
+.enlaces > li {
   display: flex;
   justify-content: center;
-  color: #404040;
-  padding: 14px;
-  text-transform: uppercase;
-  transition: all 300ms ease;
+
 }
 
 
@@ -440,5 +442,10 @@ i.icon__menu img {
 
   .slider-box {
     width: 100%;
+  }
+
+  .enlaces {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
   }
 }
