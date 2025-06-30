@@ -1,0 +1,80 @@
+/* estilos de antecedentes*/
+
+/*articulo objetivos*/
+.antecedentes {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: 190px;
+}
+
+article {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #fff;
+}
+
+article p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+
+/*estilos de equipo*/
+
+
+h2{
+  margin: 30px auto;
+  
+}
+.equipo {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: 190px;
+  
+}
+
+.equipo_iifa{
+ max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #fff;
+  
+}
+
+.pers_adm{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pers_dpto_invest{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  
+}
+
+.inf_personal{
+  width: 200px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  /* border: 1px solid #4c3c3c; */
+  
+  
+}
+.inf_personal > img{
+  width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+}
+h3{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+h4{
+  text-align: center;
+  font-size: 11px;
+}
