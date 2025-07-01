@@ -26,13 +26,17 @@ color: #848484;
 }
 
 .input-group{
+    background-color:#257f40;
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
-.input-group h3, p {
-    color: #848484;
+.input-group h3 {
+    color: #b5cab6;
+}
+.input-group p {
+    color: #b5cab6;
 }
 input, textarea{
     border-radius: 10px;
@@ -93,9 +97,18 @@ font-size: 24px;
     padding: .5rem .2rem;
 }
 
+.link-logos p{
+    margin-bottom: 0.5rem;
+}
+
+.footer-creditos p{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
 
 
-@media (max-width:640px){
+@media (max-width:720px){
 .wrap-two-column{
 grid-template-columns: 1fr;
 }

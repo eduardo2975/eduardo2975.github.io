@@ -29,6 +29,14 @@ h2{
   margin: 30px auto;
   
 }
+
+.nombre_pers{
+background-color: #c2b990;
+border-radius: 5px;
+margin: 10px;
+padding: 10px;
+text-align: center;
+}
 .equipo {
   background: #f0f0f0;
   padding: 40px 20px;
@@ -58,23 +66,39 @@ h2{
 
 .inf_personal{
   width: 200px;
-  background-color: #f0f0f0;
+  height: auto;
+  background-color: #257f40;
   border-radius: 5px;
   /* border: 1px solid #4c3c3c; */
-  
-  
 }
 .inf_personal > img{
   width: 100%;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
 }
 h3{
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
+  font-size: 13px;
+  color: #282828;
+  font-style: italic;
+  font-weight: 100;
 }
 h4{
-  text-align: center;
   font-size: 11px;
+  color: #545454;
+}
+
+/*para telefono*/
+
+@media screen and (max-width: 720px){
+ .pers_adm {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  }
+.pers_dpto_invest{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+}
+
+
 }

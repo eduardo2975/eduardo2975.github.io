@@ -1,0 +1,47 @@
+main{
+padding-top:  193px;
+}
+
+.seccion{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    "subtitulo subtitulo"
+    "texto foto"  ;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    text-align: center;
+}
+.texto{
+    grid-area: texto;
+    font-size: 14px;
+    margin-right: 20px;
+    line-height: 20px;
+}
+.foto{
+    grid-area: foto;
+}
+
+
+
+article img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 720px){
+.seccion{
+    display: flex;
+    flex-direction: column;
+}
+
+}
