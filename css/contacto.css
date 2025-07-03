@@ -112,4 +112,33 @@ font-size: 24px;
 .wrap-two-column{
 grid-template-columns: 1fr;
 }
+
+.info_contacto {
+padding-bottom: 2rem;
+}
+
+}
+
+
+
+@media (max-width:480px){
+.wrap-two-column{
+
+grid-template-columns:  1fr;
+}
+
+.hero-page{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.info_contacto {
+padding-bottom: 2rem;
+}
 }

@@ -89,7 +89,25 @@ h4{
 
 /*para telefono*/
 
-@media screen and (max-width: 720px){
+@media (max-width: 720px){
+
+.equipo {
+  background: #f0f0f0;
+  padding: 10px 10px;
+  margin-top: 145px;
+  
+}
+
+.equipo_iifa{
+ max-width: 1200px;
+  margin: 30px auto;
+  padding: 10px;
+  background: #fff;
+  
+}
+
+
+
  .pers_adm {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -97,6 +115,45 @@ h4{
 .pers_dpto_invest{
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+
+}
+
+
+}
+
+@media (max-width: 480px){
+
+.antecedentes {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: 175px;
+}
+
+.equipo {
+   max-width: 480px;
+  background: #f0f0f0;
+  padding: 10px 10px;
+  margin-top: 145px;
+  
+}
+
+.equipo_iifa{
+
+  margin: 30px auto;
+  padding: 10px;
+  background: #fff;
+  
+}
+
+
+
+ .pers_adm {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  }
+.pers_dpto_invest{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 
 }
 

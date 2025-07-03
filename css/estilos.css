@@ -74,10 +74,12 @@ article h2{
 
 article p {
   margin-top: 20px;
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 13px;
+
   text-align: justify;
+ 
 }
+
 
 /*estilos dpto_investigacion*/
 
@@ -392,7 +394,112 @@ i.icon__menu img {
     background-color: #257f40;
     position: fixed;
     left: 0;
-    top: 194px;
+    top: 175px;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  nav > ul > li > a:hover {
+    transform: scale(1);
+  }
+
+  /*posisicion sub menu*/
+
+  nav ul li ul {
+    left: 80px;
+  }
+
+  nav > ul > li:hover ul {
+    top: 44px;
+  }
+
+  nav > ul > li:first-child a {
+    background-position: 20px;
+  }
+
+  #selected {
+    transform: scale(1);
+  }
+
+  .navbar ul li ul li ul {
+    top: 0;
+    left: 185px;
+    position: absolute;
+    display: none;
+    width: 170px;
+  }
+
+  /*triangulo*/
+  nav ul li ul li ul:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 5px;
+  }
+
+  #label__check {
+    display: block;
+  }
+
+  i.icon__menu img {
+    display: flex;
+  }
+
+  #check__menu:checked ~ nav > ul {
+    height: 310px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu_inf li {
+    grid-column: 1/-1;
+  }
+
+  .slider-box {
+    width: 100%;
+  }
+
+  .enlaces {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .search input {
+    display: none;
+  }
+
+  .header_superior {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .texto_logo{
+    font-size: 1rem;
+  }
+  
+  nav > ul {
+    flex-direction: column;
+    background-color: #257f40;
+    position: fixed;
+    left: 0;
+    top: 175px;
     width: 100%;
     height: 0px;
     transition: all 300ms ease;

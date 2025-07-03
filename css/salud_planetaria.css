@@ -7,6 +7,11 @@ p{
     line-height: 20px;
 }
 
-pre{
-    font-size: 14px;
+ul{
+font-size: 14px;
+    line-height: 20px;
+}
+
+img{
+    width: 15rem;
 }
