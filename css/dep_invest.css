@@ -1,47 +1,63 @@
-main{
-padding-top:  193px;
+main {
+  padding-top: 193px;
 }
 
-.seccion{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 1fr;
-    grid-template-areas:
+.seccion {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
     "subtitulo subtitulo"
-    "texto foto"  ;
+    "texto foto";
 }
 
-.subtitulo{
-    grid-area: subtitulo;
-    text-align: center;
+.subtitulo {
+  grid-area: subtitulo;
+  text-align: center;
 }
-.texto{
-    grid-area: texto;
-    font-size: 14px;
-    margin-right: 20px;
-    line-height: 20px;
+.texto {
+  grid-area: texto;
+  font-size: 14px;
+  margin-right: 20px;
+  line-height: 20px;
 }
-.foto{
-    grid-area: foto;
+.foto {
+  grid-area: foto;
 }
 
+article img {
+  width: 100%;
+  border-radius: 20px;
+}
 
+.subtitulo {
+  text-align: center;
+}
 
-article img{
+.lineas_inv {
     width: 100%;
-    border-radius: 20px;
+  display: flex;
+  padding: 10px 0;
+
+}
+.redondo {
+  width: 5px;
+  height: 5px;
+  margin: 0 10px;
+  padding: 5px;
+  background-color: #787878;
+  border-radius: 50%;
+}
+.lineas_inv p {
+margin-top: 0;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
-.subtitulo{
-    text-align: center;
-}
-
-
-@media screen and (max-width: 720px){
-.seccion{
+@media screen and (max-width: 720px) {
+  .seccion {
     display: flex;
     flex-direction: column;
-}
-
+  }
 }
