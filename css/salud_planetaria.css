@@ -1,27 +1,219 @@
-main{
-    padding-top: 193px;
-      line-height: 25px;
+main {
+  padding-top: 50px;
+  line-height: 25px;
 }
 
-p{
-    font-size: 16px;
-
-    
+p {
+  font-size: 16px;
 }
 
-ul{
-font-size: 14px;
-  
+ul {
+  font-size: 14px;
 }
 
-img{
-    width: 15rem;
+.logo_salud_planetaria {
+  width: 15rem;
 }
 
-.lineas{
-    margin-left: 19px;
+.lineas {
+  margin-left: 19px;
 }
-.inciso{
-    margin-left: 13px;
+.inciso {
+  margin-left: 13px;
 }
 
+/*estilos juegos*/
+
+.juegos {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.titulo_juegos {
+  grid-column: 1/4;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+.los_juegos {
+  width: 100%;
+  height: auto;
+
+  grid-column: 1/4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem 0;
+}
+
+.los_juegos img {
+  width: 300px;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+
+.los_juegos img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+/*texto de los juegos*/
+.texto hr {
+  background-color: rgb(91, 184, 70);
+  height: 2px;
+  border: 0;
+
+  width: 50%;
+}
+
+.texto_juegos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  text-align: justify;
+
+  font-size: 15px;
+}
+
+.texto_juegos h1 {
+  grid-column: 1/3;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto_juegos .imagenes {
+  grid-column: 1/2;
+}
+
+.imagenes img {
+  width: 90%;
+  border-radius: 15px;
+}
+
+.texto {
+  grid-column: 2/3;
+}
+.texto h2 {
+  padding: 20px 0px 3px 0px;
+}
+.texto h3 {
+  padding: 10px 0px 3px 0px;
+  color: orange;
+}
+
+.texto ul {
+  margin-left: 40px;
+}
+
+.texto ul li {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*estilos tabla*/
+
+.tabla {
+  grid-column: 1/3;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.evaluacion {
+  width: 23%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #daeeb6;
+}
+
+.evaluacion h3 {
+  background-color: #788f4d;
+  padding: 5px 0px;
+  text-align: center;
+  color: aliceblue;
+}
+.evaluacion p {
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+/*menu mas juegos*/
+.menu_retorno {
+  height: 85px;
+  grid-column: 1/3;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_retorno li {
+  margin: 0px 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: #9cae72;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+
+.menu_retorno a {
+  color: #222222;
+  padding: 2px 30px;
+}
+
+.menu_retorno li:hover {
+  margin: 0px 10px;
+  padding: 10px 0px;
+  width: 200px;
+  background-color: #daeeb6;
+  text-align: center;
+
+  transform: scale(1.1);
+}
+
+.numeros{
+  border: 2px solid #83b723;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0px;
+  color: #536a29;
+}
+
+@media (max-width: 720px) {
+  .texto_juegos .imagenes {
+  grid-column: 1/3;
+}
+
+.texto_juegos h1{
+  font-size: 1.5rem;
+}
+  .texto {
+  grid-column: 1/3;
+}
+  .evaluacion {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+.titulo_juegos{
+  font-size: 1.5rem;
+}
+
+
+.texto_juegos h1{
+  font-size: 1rem;
+}
+  .evaluacion {
+    width: 100%;
+  }
+}
