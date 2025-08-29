@@ -119,6 +119,45 @@ align-items: center;
 }
 
 
+/*--------contenido---------*/
+.contenido{
+    width: 100%;
+    background-color: #b5ceba;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.contenido h1{
+    width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: #a0aea0;
+    text-align: center;
+}
+
+.img_parrafo{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.img_parrafo img{
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin-bottom: 20px;
+}
+
+.img_parrafo p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 
 @media screen and (max-width: 480px) {
     .logo_oen{
@@ -133,6 +172,20 @@ h2{
     font-size: 18px;
 }
 
+.img_parrafo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.img_parrafo img{
+    width: 400px;
+}
+
+.img_parrafo p{
+    width: 95%;
+    text-align: justify;
+}
 
 
 }
