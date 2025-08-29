@@ -288,6 +288,15 @@ hr{
     text-align: justify;
 }
 
+.tit_misiones{
+text-align: center;
+color: #b5ceba;
+}
 
+.btn_misiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 }
